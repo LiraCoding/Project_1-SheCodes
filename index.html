@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0 auto;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+      }
+
+      .nav button {
+        padding: 18px;
+        cursor: pointer;
+      }
+
+      .nav-1 {
+        background-color: #111d5e;
+        padding: 50px;
+      }
+      .nav-1 h1 {
+        color: white;
+        padding: 30px;
+        /* width: 1200px; */
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        display: inline-flex;
+
+        justify-content: space-around;
+      }
+
+      span {
+        color: black;
+      }
+
+      .btn button {
+        display: inline-flex;
+        justify-content: space-evenly;
+        width: 395px;
+        margin: 20px;
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        color: white;
+        border: 5px solid black;
+        border-width: 3px;
+        padding: 11px 15px;
+        box-shadow: black 3px 3px;
+        cursor: pointer;
+        transition: all 200ms ease;
+      }
+
+      select {
+        display: inline-flex;
+        justify-content: space-evenly;
+        width: 395px;
+        margin: 20px;
+        padding: 10px;
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        color: white;
+        cursor: pointer;
+      }
+
+      .user-card-1 {
+        color: white;
+        background: linear-gradient(-225deg, #b91372, #6b0f1a);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      li {
+        list-style: none;
+        background-color: #0c056d;
+        padding: 30px;
+        color: white;
+        margin: 20px;
+      }
+
+      img {
+        width: 430px;
+        height: 500px;
+        padding: 10px;
+      }
+
+      .user-card-2 {
+        line-height: 3em;
+        margin: 0 auto;
+        color: white;
+        background: linear-gradient(-225deg, #cb218e, #6617cb);
+        margin: 20px;
+        width: auto;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .user-card-3 {
+        background: linear-gradient(-225deg, #b91372, #6b0f1a);
+        color: white;
+        padding: 30px;
+      }
+
+      .email {
+        padding: 20px;
+        color: white;
+        background-color: #111d5e;
+      }
+
+      .subscribe {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+      }
+
+      .contact {
+        color: white;
+        background: linear-gradient(
+          -225deg,
+          #ff057c 0%,
+          #8d0b93 50%,
+          #321575 100%
+        );
+        padding: 20px;
+        height: 130px;
+      }
+      .contact h3 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width: 1350px;
+        background-color: white;
+      }
+
+      #search {
+        width: 500px;
+        height: 50px;
+      }
+
+      .adopt {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        background: linear-gradient(-225deg, #cb218e, #6617cb);
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .mission {
+        display: block;
+        align-items: center;
+      }
+
+      .sign-up {
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-1">
+      <div class="nav">
+        <h1><span>Dog</span>Land</h1>
+        <form>
+          <input id="search" type="text" placeholder="Search.." />
+          <button type="submit">Submit</button>
+        </form>
+
+        <select name="snack">
+          <option>Types of Dogs Available</option>
+          <option>Golden Retriever</option>
+          <option>Husky</option>
+          <option>Great Dane</option>
+          <option>Chihuahua</option>
+          <option>French Bulldog</option>
+          <option>German Shepard</option>
+          <option>Pomeranian</option>
+          <option>Boston Terrier</option>
+          <option>Pit Bull</option>
+          <option>Corgi</option>
+          <option>Pug</option>
+        </select>
+      </div>
+      <div class="btn">
+        <button onclick="buyDog()">Buy Dog Food</button>
+        <button onclick="buyDog()">Buy Dog Toys</button>
+        <button onclick="buyDog()">Buy Dog Supplies</button>
+      </div>
+    </div>
+    <div class="adopt">
+      <h2>ADOPT</h2>
+    </div>
+    <div class="user-card-1">
+      <img src="bill-stephan-9LkqymZFLrE-unsplash.jpg" />
+      <img src="ash-v0_MCllHY9M-unsplash.jpg" />
+      <img src="karsten-winegeart-BJaqPaH6AGQ-unsplash.jpg" />
+    </div>
+    <div class="user-card-2">
+      <h2>
+        “Dogs have given us their absolute all. We are the center of their
+        universe. We are the focus of their love and faith and trust. They serve
+        us in return for scraps. It is without a doubt the best deal man has
+        ever made.” – Roger A. Caras
+      </h2>
+    </div>
+    <div class="user-card-3">
+      <div class="mission">
+        <h1><em>Mission</em></h1>
+        <p>
+          <strong>
+            Our Mission is to find each of our dogs a safe home to be loved and
+            cared for❤️
+          </strong>
+        </p>
+      </div>
+      <img src="pexels-yaroslav-shuraev-4503513.jpg" />
+      <img src="pexels-valeria-boltneva-8963721.jpg" />
+      <img src="pexels-centre-for-ageing-better-11674395.jpg" />
+    </div>
+    <div class="email">
+      <h1>
+        Join our mailing list! Receive emails when we have new dogs available,
+        have special offers on dog food, dog toys, and dog supplies.
+      </h1>
+      <br />
+      <div class="subscribe">
+        <form>
+          <input type="checkbox" name="offers" id="offers" checked />
+          <label for="offers">I would like to join the mailing list!</label>
+          <input
+            onclick="signUp()"
+            class="sign-up"
+            type="submit"
+            value="Sign Up!"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="contact">
+      <h3><a href="default.asp" target="_blank">About</a></h3>
+      <hr />
+      <h3><a href="default.asp" target="_blank">Contact</a></h3>
+    </div>
+    <script>
+      function signUp() {
+        let name = prompt("What is your full name?");
+        let age = prompt("What is your age?");
+        let email = prompt("What is your email?");
+
+        if (age >= 15) {
+          alert("Hi" + " " + name + " " + "we will send you an email shortly");
+        } else {
+          alert(
+            "Sorry" +
+              " " +
+              name +
+              " " +
+              "unfortunately you are not able to sign up☹️"
+          );
+        }
+      }
+
+      function buyDog() {
+        let h2 = document.querySelector("h2");
+        h2.innerHTML = "You will be redirected to a different page";
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyDog);
+    </script>
+  </body>
+</html>
